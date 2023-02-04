@@ -1,0 +1,33 @@
+.currencyList {
+  width: 10rem;
+  position: relative;
+  height: 20em;
+  overflow: hidden;
+  background-color: white;
+}
+
+.scrollContainer {
+  overflow: auto;
+  height: 100%;
+  width: 110%;
+}
+
+.currencyList ul {
+  padding-left: 0%;
+  list-style: none;
+}
+
+.currencyList li:hover {
+  background-color: white;
+  color: rgba(0, 0, 0);
+  cursor: pointer;
+}
+.currencyList li:hover .currencyName {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.currencyName {
+  font-size: 0.7em;
+}

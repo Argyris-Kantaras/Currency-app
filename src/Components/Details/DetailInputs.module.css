@@ -1,0 +1,115 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  display: flex;
+  position: relative;
+  width: 50%;
+  grid-template-columns: 12rem 12rem 12rem 12rem;
+  justify-items: center;
+  margin: 0;
+  left: 25%;
+  top: 20%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  justify-content: center;
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  align-items: center;
+  justify-content: center;
+}
+.parameters div {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.3em;
+  border-radius: 0.5em;
+}
+
+.icon {
+  width: 3em;
+  height: 3em;
+  position: relative;
+  top: 5em;
+  background-color: rgb(46, 184, 0);
+  border-radius: 5em;
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: rgb(64, 255, 0);
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5em;
+  text-align: center;
+  color: white;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.fromToValue {
+  font-size: 2rem;
+}
+
+.fromCurrencyList {
+  display: none;
+  position: absolute;
+  top: 69%;
+  transition: 0.5s;
+}
+.parameters:hover {
+  cursor: pointer;
+}
+
+.toCurrencyList {
+  display: none;
+  position: absolute;
+  top: 69%;
+  transition: 0.5s;
+}
+
+.changeBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  position: relative;
+  top: 1em;
+  border-radius: 2em;
+  width: 5em;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.changeBtn:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 42rem;
+    left: 15%;
+    margin-top: 20%;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+  }
+  .result {
+    width: 48rem;
+  }
+}

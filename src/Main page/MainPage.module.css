@@ -1,0 +1,40 @@
+.main {
+  width: 100%;
+  background-image: url("D:\Projects\My testing web\currency-converter\src\icons\euro.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 36rem;
+}
+
+.decor1 {
+  background-color: rgb(0, 130, 4);
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  opacity: 23%;
+  transform: rotate(45deg);
+  top: 65%;
+  left: -20%;
+}
+.decor2 {
+  background-color: rgb(5, 255, 13);
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  opacity: 15%;
+  transform: rotate(45deg);
+  top: 45%;
+  left: 0%;
+  border-radius: 70rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .decor1 {
+    top: 85%;
+    left: -130%;
+  }
+  .decor2 {
+    top: 65%;
+    /* left: 0%; */
+  }
+}
